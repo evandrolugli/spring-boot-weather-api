@@ -13,13 +13,13 @@ public class WeatherController {
 
     @GetMapping("/weather/current/{city}")
     public String getCurrentWeather(@PathVariable String city) {
-        String apiKey = "e2bb0070e680cf07a460609295c5d404"; // replace with your OpenWeatherMap API key
+        String apiKey = "e2bb0070e680cf07a460609295c5d--404"; // replace with your OpenWeatherMap API key
         return weatherService.getCurrentWeather(city, apiKey);
     }
 
     @GetMapping("/weather/forecast/{city}")
     public String getForecastWeather(@PathVariable String city) {
-        String apiKey = "e2bb0070e680cf07a460609295c5d404"; // replace with your OpenWeatherMap API key
+        String apiKey = "e2bb0070e680cf07a460609295c5d--404"; // replace with your OpenWeatherMap API key
         return weatherService.getForecastWeather(city, apiKey);
     }
 }
